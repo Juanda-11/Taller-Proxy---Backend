@@ -26,5 +26,5 @@ mvn spring-boot:run      # http://localhost:8080
 mvn test
 ```
 
-## Despliegue (Railway)
-Se despliega con el `Dockerfile` incluido. Variables: `PORT` (la inyecta Railway) y opcional `CORS_ALLOWED_ORIGINS` (URL del frontend en Vercel, por defecto `*`).
+## Despliegue (Render)
+Web Service con runtime Docker (usa el `Dockerfile` incluido). Variables: `PORT` (la inyecta Render), `JAVA_TOOL_OPTIONS=-Xmx350m` en el plan gratuito y, opcionalmente, `CORS_ALLOWED_ORIGINS` (URL del frontend en Vercel, sin `/` final; por defecto `*`).
